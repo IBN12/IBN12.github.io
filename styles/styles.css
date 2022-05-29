@@ -1,0 +1,223 @@
+/* header-section - This is the entire header section. */
+.header-section{
+    display: flex;
+    flex-wrap: wrap;
+    height: 1200px;
+    background-color:#1F2937;
+    padding: 5px;
+    justify-content: center;
+    /* align-items:center; */
+}
+
+
+/*----------------------------------------------------------------------------*/
+/* Note: All header rows will be inside the header section.
+/* header-1 - First header row inside header-section. */
+.header-1{
+    display: flex;
+    height: 110px;
+    width: 1300px;
+    /* background-color: red; */
+    gap: 8px;
+}
+.header-1 div{
+    flex:auto;
+    /* border: 3px solid black; */
+    /* background-color: green; */
+}
+.header-1-item-01{
+    display: flex; 
+    width: 300px;
+    margin-right: 500px;
+}
+.header-1-item-01 div{
+    flex:auto;
+    /* border: 2px solid black; */
+    /* background-color:coral; */
+}
+.header-1-01-logo{
+    width:60px;
+}
+.header-logo-text{
+    width: 200px;
+    margin-top: 30px;
+    margin-left: 3px;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 25px;
+    color: white;
+    letter-spacing: 4px;
+}
+.header-links{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing:3px;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+a:hover{
+    cursor:pointer;
+    color: rgba(255, 255, 255, 0.39);
+    text-decoration: underline;
+}
+
+
+
+/*---------------------------------------------------------------------------------*/
+/* Note: This header will contain a primary slideshow. I will experiment with 
+the code further to find more productive methods.  */
+/* header-2 - Second header row inside header-section. */
+.header-2{
+    display: flex;
+    /* background-color: green; */
+    width: 1200px;
+    height: 600px;
+    margin-top: -90px;
+    justify-content: center;
+    align-items: center;
+}
+/* box-sizing - */
+*{
+    box-sizing: border-box;
+}
+/* slideshow-container - Will contain images that the user can scroll through. */
+.slideshow-container{
+    width: 1100px;
+    height: 550px;
+    /* background-color: red; */
+    position:absolute;
+}
+/* mySlides - Hide the images by default */
+.mySlides{
+    display: none;
+    text-align: center;
+}
+/* slide-image - The main slide image. */
+.slide-image{
+    width: 900px;
+    height: 500px;
+}
+/* prev, next -  Next & previous buttons */
+.prev, .next{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    /* width: auto; */
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius:0 3px 3px 0;
+    user-select: none;
+}
+/* next - Position the "next button" to the right */
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+/* prev:hover, next:hover - On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover{
+    background-color:rgba(0,0,0,0.8);
+}
+/* numbertext - Number text (1/3 etc) */
+.numbertext{
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* text - Caption text*/
+.text{
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 8px;
+}
+/* fade - Fading animation */
+.fade{
+    animation-name: fade;
+    animation-duration:1.5s;
+}
+/* @keyframes - To activate fade */
+@keyframes fade{
+    from {opacity: .4}
+    to {opacity: 1}
+}
+
+
+/* -------------------------------------------------------------- */
+/* Note: N/A */
+/* header-3 - Third header row inside header-section. */
+.header-3{
+    display: flex;
+    /* background-color: green; */
+    height: 350px;
+    width: 1200px;
+    padding:5px;
+    gap: 8px;
+    margin-top: -30px;
+}
+.header-3 div{
+    flex:1;
+}
+.header-3-01{
+    display: flex;
+    width: 620px;
+    flex-direction: column;
+    /* background-color: coral; */
+    gap: 8px;
+    padding:5px;
+}
+.header-3-01 div{
+    flex:auto;
+    width: 600px;
+    /* background-color: red; */
+    /* border: 3px solid black; */
+    padding: 8px;
+    color:white;
+}
+.header-3-col-01{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.header-3-col-03{
+    display: flex;
+    gap:4px;
+}
+.header-3-col-03 div{
+    flex:auto;
+    /* background-color:orange; */
+    height: 60px;
+}
+.header-3-col-03 .header-3-col-03-item-01{
+    width: 1800px;
+    margin-left:-10px;
+}
+#header-3-signup{
+    border: 1px solid #3882F6;
+    background-color:#3882F6;
+    border-radius:8px;
+    margin-top:5px;
+    margin-left:15px;
+    width:100px;
+    height:30px;
+    font-size: 15px;
+}
+#header-3-signup:hover{
+    cursor:pointer;
+    background-color:#5290f3;
+}
+.header-3-02{
+    /* background-color:red; */
+    /* border: 3px solid black; */
+}
